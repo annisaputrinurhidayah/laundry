@@ -70,9 +70,9 @@
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->quantity }} x {{ number_format($item->attributes->harga_awal, 0, ',', '.') }}
                                      @if ($item->attributes->discount_type == 'percent')
-                                    ({{ number_format($item->quantity * $item->attributes->diskon, 0, ',', '.') }}%)
+                                    ({{ number_format($item->attributes->diskon, 0, ',', '.') }}%)
                                             @elseif($item->attributes->discount_type == 'fixed')
-                                            ({{ number_format($item->quantity * $item->attributes->diskon, 0, ',', '.') }})
+                                            ({{ number_format($item->attributes->diskon, 0, ',', '.') }})
                                             @else
                                         @endif
                                 </td>
