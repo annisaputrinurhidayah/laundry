@@ -94,9 +94,9 @@
                             <a href="{{ route('transaksi.status', ['transaksi' => $transaksi->id, 'status' => 'proses']) }}"
                                 class="dropdown-item">
                                 Proses</a>
-                            <a href="{{ route('transaksi.status', ['transaksi' => $transaksi->id, 'status' => 'batal']) }}"
+                            {{-- <a href="{{ route('transaksi.status', ['transaksi' => $transaksi->id, 'status' => 'batal']) }}"
                                 class="dropdown-item">
-                                Dibatalkan</a>
+                                Dibatalkan</a> --}}
                         @elseif ($transaksi->status == 'proses')
                             <a href="{{ route('transaksi.status', ['transaksi' => $transaksi->id, 'status' => 'selesai']) }}"
                                 class="dropdown-item">
